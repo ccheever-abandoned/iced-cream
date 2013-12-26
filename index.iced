@@ -1,9 +1,8 @@
 ##
-# Cream - Makes Iced Coffee a little more palatable
+# Iced Cream  - Makes Iced Coffee a little more palatable
 #
-# Mostly, these are things that save you typing when you're working
-# with async functions that can be throwing errors at any minute
-#
+# A Node module to help write cleaner code, especially around error
+# checking, when using Iced Coffee Script
 ##
 
 winston = require 'winston'

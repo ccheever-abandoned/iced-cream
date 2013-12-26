@@ -69,6 +69,10 @@ saveTo = (name, this_) ->
   """Returns a function that takes an async function and saves what
     it passes along into global[name]"""
 
+  # We'll use a default of triple underscore if a name isn't specified
+  if not name?
+    name = "___"
+
   (fn, args...) ->
     args.push (err, val) ->
       if err?
